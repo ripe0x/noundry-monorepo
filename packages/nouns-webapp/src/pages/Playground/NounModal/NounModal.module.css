@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  top: 15vh;
+  z-index: 100;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  left: calc(50% - 12.5rem);
+  width: 25rem;
+}
+
+.displayNounFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.displayNounFooter span {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.displayNounFooter button {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+
+.displayNounFooter button:hover,
+.displayNounFooter button:active,
+.displayNounFooter button:focus {
+  background: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: none !important;
+}
+
+.nounImg {
+  border-radius: 16px;
+}
+.nounWrapper {
+  margin-bottom: 1rem;
+}
+
+.traitsList {
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+  margin-bottom: 1em;
+  border-radius: 16px;
+  padding: 15px;
+  margin: 0;
+  text-align: left;
+}
+.traitsList li {
+  list-style-type: none;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  font-size: 0.8rem;
+}
+.traitsList li:last-child {
+  margin: 0;
+}
+.traitsList li span {
+  display: block;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.75;
+}
+
+@media (max-width: 992px) {
+  .modal {
+    /* width: 80% !important;
+    left: 10% !important; */
+  }
+}
